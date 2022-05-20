@@ -1,0 +1,27 @@
+/*@media (max-width : 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-link {
+        display: none;
+    }
+}*/
+
+@media (max-width : 1000px) {
+    .div-container {
+        display: block;
+       
+        align-items: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        
+        
+    }
+    .footer-col {
+        width: 50%;
+        margin-top: 30px;
+    }
+   
+    
+}

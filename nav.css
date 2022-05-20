@@ -1,0 +1,107 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: white;
+
+}
+
+.nav-link ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-link li {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.nav-link li:hover {
+    background-color: black;
+    text-transform: uppercase;
+
+}
+
+
+  
+
+
+
+
+.nav-link a:hover {
+    color: white;
+}
+
+/*.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-items: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}*/
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+    color: white;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 1pc 1pc 1pc 0pc black;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: blue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: black}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}

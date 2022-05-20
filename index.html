@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="looks.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="images.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+    <script src="omo.js"></script>
+
+    <div>
+        <header id="header">
+            <nav id="nav-bar">
+                <div><img src="tesla-icon-2.jpg" id="header-img" alt="company logo"></div>
+                <a href="#" class="toggle-button">
+                    <span class="bar" id="bar1"></span>
+                    <span class="bar" id="bar2"></span>
+                    <span class="bar" id="bar3"></span>
+                </a>
+                <div class="nav-link">
+                    <ul>
+                        <li>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">The cars</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#model S" class="nav-link">model S</a>
+                                    <a href="#model 3" class="nav-link">model 3</a>
+                                    <a href="#model X" class="nav-link">model X</a>
+                                    <a href="#model Y" class="nav-link">model Y</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#video" class="nav-link">Over view</a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="nav-link">Bottom</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <h1>Freecode camp project</h1>
+    <h2>Tesla landing page</h2>
+
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="Email" name="email" id="email">
+        </div>
+        <div class="b">
+            <button type="submit" class="btn" id="submit"><b>submit</b></button>
+        </div>
+    </form>
+
+
+
+    <div class="about">
+        <h3>About</h3>
+        <p>Tesla has four(4) line up of cars known as model S, model 3, model X and model Y <b>SEXY</b></br>
+            <img src="sexy.png" class="sexy">
+            </br>All of which has
+        <ul>
+            <li>Navigation on Auto pilot</li>
+            <li>Auto Lane Change</li>
+            <li>Autopark</li>
+            <li>Summon</li>
+            <li>Full Self-Driving Computer</li>
+            <li>Traffic Light and Stop Sign Control</li>
+        </ul>
+        Tesla are the best in the pruduction of <b><em>EVs</em></b> (Electric Vehicles)</br>
+        Tesla model X plaid accelerates from 0-60 mph in 2.5s Quickest accelerating SUV in production today</br>
+        Tesla model s plaid accelerates from 0-60 in 1.99s Quickest accelerating car in production today </p>
+    </div>
+    <section id="video">
+        <div class="c">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/tlThdr3O5Qo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <center>
+            <figcaption><b><em>Video of tesla self driving</em></b></figcaption>
+        </center>
+    </section>
+    <section id="model S">
+        <div class="models">
+
+
+            <h2>Tesla model S</h2>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade" id="st">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="Screenshot (37).png" style="width:100%">
+                    <div class="text"><b>Front view </b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="Screenshot (38).png" style="width:100%">
+                    <div class="text"><b>Side view</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="Screenshot (39).png" style="width:100%">
+                    <div class="text"><b>Rear view</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="module 3 interior.jpg" style="width:100%">
+                    <div class="text"><b>Interior</b></div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <figcaption>
+                <center><b><em>Images of Model S</em></b></center>
+            </figcaption>
+            <p style="margin-top: 3rem;">The tesla model S has two variaints which includes
+            <ul>
+                <li>
+                    The base model S
+                </li>
+                <li>
+                    And a plaid edition
+                </li>
+            </ul>
+            <h3>Plaid upgrade</h3>
+            <h4>includes</h4>
+            <fieldset class="field">
+                <legend>
+                    <b>
+                        <em>
+                            Features
+                        </em>
+                    </b>
+                </legend>
+                <ul>
+                    <li> quickest accelerating car in production today</li>
+                    <li> 0-60 mph: 1.99s</li>
+                    <li> 1/4 mile: 9.23@155 mph trap speed</li>
+                    <li> 1,020 horsepower</li>
+                    <li> Three high performance motors with carbon-sleeved rotors</li>
+                    <li> Torque vectoring</li>
+                </ul>
+
+
+
+
+
+
+            </fieldset>
+            </p>
+
+        </div>
+        </div>
+    </section>
+    <section id="model 3">
+        <div class="model3">
+            <section>
+                <h2>
+                    Tesla Model 3
+                </h2>
+                <div class="container">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="Screenshot (46).png"></div>
+                            <div class="swiper-slide"><img src="Screenshot (47).png"></div>
+                            <div class="swiper-slide"><img src="Screenshot (48).png"></div>
+                            <div class="swiper-slide"><img src="model3interior - Copy.webp"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+
+                    </div>
+                </div>
+        </div>
+        <p style="margin-top: 3rem;">The tesla model 3 has three variaints which includes
+        <ul>
+            <li>The base Model 3</li>
+            <li>A long range Edition, And</li>
+            <li>A performance Edition</li>
+        </ul>
+        <div>
+            <h3>Model 3 performance upgrade</h3>
+            <h4>includes</h4>
+            <fieldset class="field">
+                <legend>
+                    <b>
+                        <em>
+                            Features
+                        </em>
+                    </b>
+                </legend>
+                <ul>
+                    <li> 20’’ Überturbine Wheels</li>
+                    <li> Performance Brakes</li>
+                    <li> Carbon fiber spoiler</li>
+                    <li> Aluminum alloy pedals</li>
+
+                </ul>
+            </fieldset>
+            </p>
+        </div>
+
+        <div class="div-container">
+            <div style="border: 2px solid black; border-radius: 10px; margin-top: 1rem;
+     height: auto; width: fit-content; display: flex; align-self: center;">
+                <div>
+                    <h2 style="color: white; background-color: black; margin: 0 none;">Base Model 3</h2>
+                    <p style="margin-left: .5rem; text-align: center;  margin-top: .5rem;">
+                        Tesla model 3 With a price tag of $46,990*</br> is a rear-wheel Drive <b><em>EV</em></b>
+                        with 267Miles estimated range,</br> a top speed of 140mph,</br> and an acceleration of
+                        0-60mph in 5.8sec
+                    </p>
+                    <div style=" justify-content: center; display: flex;">
+                        <button style=" color: white; background-color: black;
+                 width: 50%; margin-bottom: .5rem; margin-top: .3rem; border-radius: 50px;" class="model3order">
+                            <a class="module3" href="https://www.tesla.com/model3/design#overview"><b>order now</b></a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="border: 2px solid black; border-radius: 10px; margin-top: 1rem;
+     height: auto; width: fit-content; display: flex; align-self: center;">
+                <div>
+                    <h2 style="color: white; background-color: black; margin: 0 none;">Model 3 Long Range</h2>
+                    <p style="margin-left: .5rem; text-align: center;  margin-top: .5rem;">
+                        Tesla model 3 Longe Range, With a price tag of $55,990*</br> is a Dual Motor All-wheel Drive
+                        <b><em>EV</em></b>
+                        with 334 Miles estimated range,</br> a top speed of 140mph,</br> and an acceleration of
+                        0-60mph in 5.8sec
+                    </p>
+                    <div style=" justify-content: center; display: flex;">
+                        <button style=" color: white; background-color: black;
+                 width: 50%; margin-bottom: .5rem; margin-top: .3rem; border-radius: 50px;" class="model3order">
+                            <a class="module3" href="https://www.tesla.com/model3/design#overview"><b>order now</b></a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="border: 2px solid black; border-radius: 10px; margin-top: 1rem;
+        height: auto; width: fit-content; display: flex; align-self: center;" class="div">
+                <div>
+                    <h2 style="color: white; background-color: black; margin: 0 none;">Model 3 performance</h2>
+                    <p style="margin-left: .5rem; text-align: center; margin-top: .5rem;">
+                        Tesla model 3 performance, With a price tag of $62,990*</br> is a Dual Motor All-wheel Drive
+                        <b><em>EV</em></b>
+                        with 315Miles estimated range,</br> a top speed of 162mph,</br> and an acceleration of
+                        0-60mph in 3.1sec
+                    </p>
+                    <div style=" justify-content: center; display: flex;">
+                        <button style=" color: white; background-color: black;
+                    width: 50%; margin-bottom: .5rem; margin-top: .3rem; border-radius: 50px;" class="model3order">
+                            <a class="module3" href="https://www.tesla.com/model3/design#overview"><b>order now</b></a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="model X">
+        <div class="modelx">
+
+            <h2>
+                Model X
+            </h2>
+            <div class="x">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/aBtKSTW5CD8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <center>
+                <figcaption><b><em>Elon Musk showing off model X falcon wing doors </em></b></figcaption>
+            </center>
+
+
+            <div class="container" style="margin-top: 2rem;">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="Screenshot (62).png"></div>
+                        <div class="swiper-slide"><img src="Screenshot (63).png"></div>
+                        <div class="swiper-slide"><img src="Screenshot (64).png"></div>
+                        <div class="swiper-slide"><img src="modelxinterior - Copy.jpg"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
+            </div>
+            <center>
+                <figcaption><b><em>Images of Model X </em></b></figcaption>
+            </center>
+
+            <p style="margin-top: 2rem;">
+                The Tesla model X has 2 (two) variaints which includes
+            <ul>
+                <Li>
+                    The base Model X, And
+                </Li>
+                <li>
+                    A plaid Edition
+                </li>
+            </ul>
+            </p>
+            <div>
+                <h3>Plaid upgrade</h3>
+                <h4>includes</h4>
+                <fieldset class="field">
+                    <legend>
+                        <b>
+                            <em>
+                                Features
+                            </em>
+                        </b>
+                    </legend>
+                    <ul>
+                        <li> Quickest accelerating SUV in production today</li>
+                        <li> 0-60 mph: 2.5s</li>
+                        <li> 1/4 mile: 9.9s</li>
+                        <li> 1,020 horsepower</li>
+                        <li> Three high performance motors with carbon-sleeved rotors</li>
+                        <li> Torque vectoring</li>
+                    </ul>
+                </fieldset>
+            </div>
+
+
+            <div class="div-container">
+                <div style="border: 2px solid black; border-radius: 10px; margin-top: 1rem;
+             height: auto; width: fit-content; display: flex; align-self: center;">
+                    <div>
+                        <h2 style="color: white; background-color: black; margin: 0 none;">Base Model X</h2>
+                        <p style="margin-left: .5rem; text-align: center;  margin-top: .5rem;">
+                            Tesla Model X With a price tag of $114,990*</br> is a Dual Motor All-wheel Drive
+                            <b><em>EV</em></b>
+                            with 330Miles estimated range,</br> a top speed of 155mph,</br> and an acceleration of
+                            0-60mph in 3.8sec
+                        </p>
+                        <div style=" justify-content: center; display: flex;">
+                            <button style=" color: white; background-color: black;
+                         width: 50%; margin-bottom: .5rem; margin-top: .3rem; border-radius: 50px;"
+                                class="model3order">
+                                <a class="module3" href="https://www.tesla.com/modelx/design#overview"><b>order
+                                        now</b></a>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="border: 2px solid black; border-radius: 10px; margin-top: 1rem;
+             height: auto; width: fit-content; display: flex; align-self: center;">
+                    <div>
+                        <h2 style="color: white; background-color: black; margin: 0 none;">Model X Plaid</h2>
+                        <p style="margin-left: .5rem; text-align: center;  margin-top: .5rem;">
+                            Tesla model X Plaid, With a price tag of $138,990*</br> is a tri Motor All-wheel Drive
+                            <b><em>EV</em></b>
+                            with 311 Miles estimated range,</br> a top speed of 163mph,</br> and an acceleration of
+                            0-60mph in 2.5sec
+                        </p>
+                        <div style=" justify-content: center; display: flex;">
+                            <button style=" color: white; background-color: black;
+                         width: 50%; margin-bottom: .5rem; margin-top: .3rem; border-radius: 50px;"
+                                class="model3order">
+                                <a class="module3" href="https://www.tesla.com/modelx/design#overview"><b>order
+                                        now</b></a>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section id="model Y">
+        <div class="modely">
+            <section>
+                <h2>
+                    Tesla Model Y
+                </h2>
+
+                <div class="container" style="margin-top: 2rem;">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="Screenshot (70).png"></div>
+                            <div class="swiper-slide"><img src="Screenshot (71).png"></div>
+                            <div class="swiper-slide"><img src="Screenshot (72).png"></div>
+                            <div class="swiper-slide"><img src="modelyinterior - Copy.jpg"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+
+                    </div>
+                </div>
+                <center>
+                    <figcaption><b><em>Images of Model y </em></b></figcaption>
+                </center>
+                <p style="margin-top: 2rem;">
+                    The Tesla model Y has 2 (two) variaints which includes
+                <ul>
+                    <Li>
+                        A Long Range Edition, And
+                    </Li>
+                    <li>
+                        A performance Edition
+                    </li>
+                </ul>
+
+                <div>
+                    <h3>Model 3 performance upgrade</h3>
+                    <h4>includes</h4>
+                    <fieldset class="field">
+                        <legend>
+                            <b>
+                                <em>
+                                    Features
+                                </em>
+                            </b>
+                        </legend>
+                        <ul>
+                            <li> Increased top speed from 135mph to 155mph</li>
+                            <li> 21’’ Überturbine Wheels</li>
+                            <li> Performance Brakes</li>
+                            <li>Lowered suspension</li>
+
+                        </ul>
+                    </fieldset>
+                    </p>
+                </div>
+                </p>
+
+                <div class="div-container">
+                    <div style="border: 2px solid black; border-radius: 10px; margin-top: 1rem;
+             height: auto; width: fit-content; display: flex; align-self: center;">
+                        <div>
+                            <h2 style="color: white; background-color: black; margin: 0 none;">Model Y Long Range</h2>
+                            <p style="margin-left: .5rem; text-align: center;  margin-top: .5rem;">
+                                Tesla Model Y With a price tag of $62,990*</br> is a Dual Motor All-wheel Drive
+                                <b><em>EV</em></b>
+                                with 318Miles estimated range,</br> a top speed of 135mph,</br> and an acceleration of
+                                0-60mph in 4.8sec
+                            </p>
+                            <div style=" justify-content: center; display: flex;">
+                                <button style=" color: white; background-color: black;
+                         width: 50%; margin-bottom: .5rem; margin-top: .3rem; border-radius: 50px;"
+                                    class="model3order">
+                                    <a class="module3" href="https://www.tesla.com/modely/design#overview"><b>order
+                                            now</b></a>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="border: 2px solid black; border-radius: 10px; margin-top: 1rem;
+             height: auto; width: fit-content; display: flex; align-self: center;">
+                        <div>
+                            <h2 style="color: white; background-color: black; margin: 0 none;">Model Y Performance</h2>
+                            <p style="margin-left: .5rem; text-align: center;  margin-top: .5rem;">
+                                Tesla model Y Performance, With a price tag of $67,990*</br> is a dual Motor All-wheel
+                                Drive
+                                <b><em>EV</em></b>
+                                with 303 Miles estimated range,</br> a top speed of 155mph,</br> and an acceleration of
+                                0-60mph in 3.5sec
+                            </p>
+                            <div style=" justify-content: center; display: flex;">
+                                <button style=" color: white; background-color: black;
+                         width: 50%; margin-bottom: .5rem; margin-top: .3rem; border-radius: 50px;"
+                                    class="model3order">
+                                    <a class="module3" href="https://www.tesla.com/modely/design#overview"><b>order
+                                            now</b></a>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><b>^</b></button>
+    <section id="footer">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="https://www.tesla.com/about" target="_blank">About Tesla</a></li>
+                            <li><a href="https://www.tesla.com/service" target="_blank">Services</a></li>
+                            <li><a href="https://www.tesla.com/legal/privacy" target="_blank">privacy</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">CEO</a></li>
+                            <li><a href="https://www.tesla.com/" target="_blank">Online Store</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>follow Tesla</h4>
+                        <div class="social-links">
+                            <a href="https://twitter.com/Tesla?s=20&t=xC_9vYD2QG1T0fjuUgJkhA" target="_blank"><i
+                                    class="fa fa-twitter twitter"></i></a>
+                            <a href="https://www.youtube.com/tesla" target="_blank"><i
+                                    class="fa fa-youtube-play youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>FreeCodeCamp</h4>
+                        <ul>
+                            <li><a href="https://www.freecodecamp.org/" target="_blank">About FreeCodeCamp</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Web developer</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/jonah-oforkile-57a34522b/" target="_blank"><i
+                                    class="fa fa-linkedin linkedin" aria-hidden="true"></i></a>
+                            <a href="mailto:jonah@gmail.com" target="_blank"><i
+                                    class="fa fa-envelope email"></i></i></a>
+                            <a href="https://wa.me/+2348094257167" target="_blank"><i class="fa fa-whatsapp whatsapp"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://github.com/oforson" target="_blank"><i class="fa fa-github github"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 2000,
+                disableOnIntraction: false,
+            },
+
+            loop: true,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+        });
+    </script>
+
+</body>
+
+</html>
